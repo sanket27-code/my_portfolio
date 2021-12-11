@@ -1,0 +1,36 @@
+.nav{
+    height: 80px;
+    background: transparent;
+    line-height: 80px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav img{
+    margin-left: 160px;
+    width: 100px;
+    padding: 10px 0;
+    height: 60px;
+    z-index: 10;
+}
+.nav .menu{
+    margin: 0 auto;
+}
+.nav .menu a{
+    color: var(--primary_color);
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: .3s color ease-in;
+    font-weight: 500;
+    padding: .3rem .5rem;
+    transition: .3s font-size ease-in-out;
+    position: relative;
+}
+.nav .menu a:hover{
+    color: var(--secondary_color);
+    font-size: .9rem;
+    border-bottom: 2px solid var(--primary_color);
+}

@@ -1,0 +1,93 @@
+.projects_container{
+    width: 100%;
+    background: var(--bg_color);
+
+}
+.projects_container .projects_box{
+    width: 100%;
+    height: 100%;
+}
+.projects_container .projects_box, .projects_container .projects_box .projects{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.projects_container .projects_box{
+    flex-direction: column;
+}
+.projects_container .projects_box .projects{
+    flex-wrap: wrap;
+}
+.projects_container .projects_box h3{
+    color: var(--secondary_color);
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 1rem auto 0;
+}
+.projects_container .projects_box .projects .project{
+    width: 320px;
+    height: 480px;
+    margin: .5rem 1rem;
+    position: relative;
+    transform: scale(.8);
+    transition: .5s transform ease-in-out;
+}
+.projects_container .projects_box .projects .project img{
+    width: 100%;
+    height: 100%;
+}
+.projects_container .projects_box .projects .project::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    top: 0;
+    left: 0;
+    transition: .5s background ease-in-out;
+}
+.projects_container .projects_box .projects .project:nth-child(1):hover::before{
+    background: #4cd137;
+}
+.projects_container .projects_box .projects .project:nth-child(2):hover::before{
+    background: #fbc531;
+}
+.projects_container .projects_box .projects .project:nth-child(3):hover::before{
+    background: #0097e6;
+}
+.projects_container .projects_box .projects .project:nth-child(4):hover::before{
+    background: #e84118;
+}
+
+.projects_container .projects_box .projects .project:hover{
+    transform: scale(.9);
+}
+
+.projects_container .projects_box .projects .project button{
+    padding: .3rem 1.5rem;
+    position: absolute;
+    display: block;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: var(--secondary_color);
+    color: var(--primary_color);
+    font-size: 1rem;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: .5s all ease-in-out;
+    cursor: pointer;
+}
+.projects_container .projects_box .projects .project button a{
+    color: var(--primary_color);
+    text-decoration: none;
+}
+.projects_container .projects_box .projects .project:hover button{
+    top: 50%;
+    opacity: 1;
+}
