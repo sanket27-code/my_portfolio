@@ -16,7 +16,7 @@
     color: var(--primary_color);
     clip-path: polygon(100% 0, 100% 90%, 70% 100%, 0 80%, 0 0);
     padding: .5rem 0 1.5rem;
-
+    overflow: hidden;
 }
 .profile_layout, .profile_content, .social_icons, .btns{
     display: flex;
@@ -27,12 +27,11 @@
 .profile_layout{
     width: 100%;
     justify-content: space-evenly;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 1rem 0;
 }
 .profile_content{
     flex-direction: column;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 .profile_content .left{
     padding: 4rem 3rem;
@@ -42,13 +41,12 @@
 .social_icons a{
     font-size: 1.2rem;
     margin: -.5rem .5rem;
-    color: var(--primary_color);
+    color: #999999;
     background-color: transparent;
-    opacity: .7;
     transition: opacity .5s ease;
 }
 .social_icons a:hover{
-    opacity: 1;
+    color: var(--primary_color);
 }
 .profile_text{
     font-size: 1.4rem;
@@ -67,9 +65,10 @@
 }
 .tagLine{
     font-size: 1rem;
-    opacity: .8;
     margin-top: 4rem;
+    padding: 0 1rem;
     text-align: justify;
+    color: #b8b9bb;
 }
 .btn{
     padding: 0 1.2rem;
@@ -142,4 +141,86 @@
 }
 .dp:hover::before{
     transform: scale(.8);
+}
+
+
+
+@media ( max-width:480px ){
+    .profile_container{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+        padding: .5rem 0 1rem;
+    }
+    .profile_layout{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .profile_content{
+        margin: 2rem 0;
+    }
+    .profile_content .left{
+        padding: 2rem;
+        margin-right: 0;
+    }
+    .social_icons a{
+        font-size: 1rem;
+    }
+    .profile_text{
+        font-size: 1.1rem;
+        margin-top: .4rem;
+    }
+    .highlighted_text{
+        font-size: 1.6rem;
+        padding-left: 5px;
+    }
+    .profile_details_role h1{
+        font-size: 2rem;
+        margin: .5rem auto;
+    }
+    .tagLine{
+        font-size: .8rem;
+        margin-top: 3rem;
+        padding: 0 .5rem;
+    }
+    .btn{
+        padding: 0 1rem;
+        width: 120px;
+        margin: 2rem .8rem 1rem;
+    }
+    
+
+    .dp{
+        position: relative;
+        /* width: 260px; */
+        width: 70%;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .dp img{
+        width: 100%;
+        border-radius: 50%;
+        filter: brightness(40%);
+        transform: scale(.9);
+        transition: .5s transform ease-in-out;
+    }
+    .dp:hover img{
+        transform: scale(.95);
+        filter: brightness(50%);
+    }
+    .right .dp::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        border-radius: 50%;
+        filter: none;
+        border-bottom: 4px solid var(--primary_color);
+        border-top: 4px solid var(--primary_color);
+        transform: scale(.9);
+        transition: .4s transform ease-in-out;
+    }
+    .dp:hover::before{
+        transform: scale(.8);
+    }
+
 }

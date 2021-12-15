@@ -1,8 +1,7 @@
 .projects_container{
     width: 100%;
     background: var(--bg_color);
-
-}
+} 
 .projects_container .projects_box{
     width: 100%;
     height: 100%;
@@ -90,4 +89,26 @@
 .projects_container .projects_box .projects .project:hover button{
     top: 50%;
     opacity: 1;
+}
+
+
+
+@media (max-width: 480px){
+    .projects_container .projects_box h3{
+        font-size: 1.6rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin: .5rem auto .2rem;
+    }
+    .projects_container .projects_box .projects .project{
+        width: 160px;
+        height: 250px;
+        margin: .5rem .2rem;
+        transform: scale(1);
+    }
+    .projects_container .projects_box .projects .project button{
+        width: 90px;
+        padding: .3rem 1rem;
+        font-size: .8rem;
+    }
 }

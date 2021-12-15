@@ -3,6 +3,7 @@ import Projects from './Components/Projects/Projects';
 import { Route, Routes } from 'react-router-dom';
 import AllComponents from './AllComponents';
 import Contact from './Components/ContactMe/Contact';
+import About from './Components/AboutMe/About';
 
 function App() {
   return (

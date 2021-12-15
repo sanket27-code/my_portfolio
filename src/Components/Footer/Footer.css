@@ -1,7 +1,9 @@
 .footer_container{
     background-color: var(--bg_color);
     width: 100%;
-    margin-top: .5rem;
+    margin-top: 1.5rem;
+    padding-top: 2rem;
+    clip-path: polygon(50% 12%, 100% 0, 100% 100%, 0 99%, 0 0);
 }
 .footer_box{
     width: 100%;
@@ -47,7 +49,7 @@
     justify-content: space-evenly;
     align-items: center;
     margin: 0 0 2rem;
-}
+} 
 .footer_box .copyrights_box .copyrights h4,.footer_box .copyrights_box .copyrights h5{
     color: #2c3e50;
     font-weight: 500;
@@ -77,4 +79,51 @@
 .dark_menu{
     color: white;
     background: black;
+}
+
+
+
+@media (max-width: 480px){
+    .footer_container{
+        clip-path: polygon(50% 5%, 100% 0, 100% 100%, 0 99%, 0 0);
+    }
+    .footer_box{
+        margin: 2px auto 0;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .footer_contents{
+        margin: 1rem 1.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .footer_contents .footer_content{
+        margin: .5rem 1rem;
+    }
+    .footer_contents .footer_content ul li{
+        font-size: .8rem;
+    }
+
+    .footer_box .copyrights_box{
+        flex-direction: column;
+    }
+    .footer_box .copyrights_box .copyrights{
+        margin-bottom: 1rem;
+    } 
+    .footer_box .copyrights_box .copyrights h4,.footer_box .copyrights_box .copyrights h5{
+        color: #2c3e50;
+        font-weight: 500;
+        font-size: .8rem;
+    }
+    .footer_box .copyrights_box .nav_menu .menus{
+        margin-left: 0;
+        padding: .2rem;
+    }
+    .footer_box .copyrights_box .nav_menu .menus a{
+        padding: .2rem .5rem;
+        border-radius: 2rem;
+        font-size: .8rem;
+    }
 }
