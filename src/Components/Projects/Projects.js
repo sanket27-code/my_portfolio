@@ -11,6 +11,9 @@ const Projects = () => {
   return (
     <>
       <div className="projects_container">
+      <>
+        <Header />
+      </>
         <div className="projects_box">
           <div className="project_title">
             <h3>projects</h3>
