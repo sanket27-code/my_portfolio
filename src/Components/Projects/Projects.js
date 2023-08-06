@@ -22,7 +22,7 @@ const Projects = () => {
             <div className="project">
               <img src={chat} alt="chatApp"></img>
               <button>
-                <a href="http://buzzy-chat.herokuapp.com/" target="_blank">
+                <a href="http://buzzy-chat.herokuapp.com/" >
                   visit here
                 </a>
               </button>
@@ -30,7 +30,7 @@ const Projects = () => {
             <div className="project">
               <img src={thefoodieyatra} alt="thefoodieyatra.in"></img>
               <button>
-                <a href="https://thefoodieyatra.in/" target="_blank">
+                <a href="https://thefoodieyatra.in/" >
                   visit here
                 </a>
               </button>
@@ -38,7 +38,7 @@ const Projects = () => {
             <div className="project">
               <img src={covid} alt="covidApp"></img>
               <button>
-                <a href="https://covid-upd.herokuapp.com/" target="_blank">
+                <a href="https://covid-upd.herokuapp.com/" >
                   visit here
                 </a>
               </button>
@@ -46,7 +46,7 @@ const Projects = () => {
             <div className="project">
               <img src={dictionary} alt="dictionaryApp"></img>
               <button>
-                <a href="https://ur-dictionary.herokuapp.com/" target="_blank">
+                <a href="https://ur-dictionary.herokuapp.com/" >
                   visit here
                 </a>
               </button>

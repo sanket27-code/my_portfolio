@@ -20,7 +20,7 @@ function Footer() {
               <li>
                 <a
                   href="https://www.linkedin.com/in/sanket-ainchwar-935467205"
-                  target="_blank"
+                  
                 >
                   LinkedIn
                 </a>
@@ -28,7 +28,7 @@ function Footer() {
               <li>
                 <a
                   href="https://www.instagram.com/sanketainchwar/"
-                  target="_blank"
+                  
                 >
                   Instagram
                 </a>
@@ -36,14 +36,9 @@ function Footer() {
               <li>
                 <a
                   href="https://www.facebook.com/sanket.ainchwar/"
-                  target="_blank"
+                  
                 >
                   Facebook
-                </a>
-              </li>
-              <li>
-                <a href="" target="_blank">
-                  Tweeter
                 </a>
               </li>
             </ul>
